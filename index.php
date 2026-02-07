@@ -1,55 +1,73 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>M.H.M ARIF BILLAH CHOWDHURY RUDDRO | Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <div class="glass-bg"></div>
+    <div class="bg-glow"></div>
+    
     <div class="app-container">
         <aside class="sidebar">
             <div class="profile-area">
-                <img src="assets/profile.jpg" alt="Ruddro" class="profile-img-passport">
-                <h1 class="full-name">M.H.M ARIF BILLAH CHOWDHURY RUDDRO</h1>
+                <div class="img-wrapper">
+                    <img src="assets/profile.jpg" alt="Ruddro" class="profile-img-passport">
+                </div>
+                <h1 class="full-name">M.H.M ARIF BILLAH CHOWDHURY<br><span>RUDDRO</span></h1>
                 <p class="tagline">CSE Graduate from AIUB</p>
             </div>
             
             <nav class="sidebar-nav">
-                <a href="#about"><i class="fas fa-user"></i> About</a>
-                <a href="#skills"><i class="fas fa-code"></i> Skills</a>
-                <a href="#projects"><i class="fas fa-tasks"></i> Projects</a>
-                <a href="#contact"><i class="fas fa-envelope"></i> Contact</a>
+                <a href="#about" class="nav-link"><i class="fas fa-fingerprint"></i> About</a>
+                <a href="#skills" class="nav-link"><i class="fas fa-layer-group"></i> Skills</a>
+                <a href="#projects" class="nav-link"><i class="fas fa-rocket"></i> Projects</a>
+                <a href="#contact" class="nav-link"><i class="fas fa-bolt"></i> Contact</a>
             </nav>
 
-            
+            <div class="sidebar-footer">
+                <div class="social-grid">
+                    <a href="https://github.com/ruddroo" target="_blank" class="social-box" title="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/ruddrochowdhury/" target="_blank" class="social-box" title="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://www.facebook.com/ruddroo/" target="_blank" class="social-box" title="Facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                </div>
 
-            <div class="sidebar-contact-list">
-                <p><i class="fas fa-phone"></i> 01794926342</p>
-                <p><i class="fas fa-envelope"></i> mhmruddro1443@gmail.com</p>
+                <div class="contact-details">
+                    <a href="tel:01794926342" class="contact-item">
+                        <i class="fas fa-phone-alt"></i>
+                        <span>01794926342</span>
+                    </a>
+                    <a href="mailto:mhmruddro1443@gmail.com" class="contact-item">
+                        <i class="far fa-envelope"></i>
+                        <span>mhmruddro1443@gmail.com</span>
+                    </a>
+                </div>
+
+                <a href="assets/ruddro_cv.pdf" download class="modern-cv-btn">
+                    <span>Download CV</span> <i class="fas fa-download"></i>
+                </a>
             </div>
-
-            <div class="social-links">
-                <a href="https://github.com/ruddroo" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
-                <a href="https://www.linkedin.com/in/ruddrochowdhury/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                <a href="https://www.facebook.com/ruddroo/" target="_blank" title="Facebook"><i class="fab fa-facebook"></i></a>
-            </div>
-
-            <a href="assets/ruddro_cv.pdf" download class="gloss-btn cv-btn">Download CV</a>
         </aside>
 
         <main class="main-content">
-            <section id="about" class="glass-card section-spacer">
-                <h2 class="section-title"><i class="fas fa-user-graduate"></i> About Me</h2>
+            <section id="about" class="glass-card reveal">
+                <h2 class="section-title">About Me</h2>
                 <div class="typing-container">
                     <span id="typing-text"></span><span class="cursor">|</span>
                 </div>
             </section>
 
-            <section id="skills" class="glass-card section-spacer">
-                <h2 class="section-title"><i class="fas fa-tools"></i> Technical Skills</h2>
+            <section id="skills" class="glass-card reveal">
+                <h2 class="section-title">Technical Expertise</h2>
                 <div class="skills-grid">
                     <span class="skill-pill">R-script</span>
                     <span class="skill-pill">Python</span>
@@ -62,41 +80,43 @@
                 </div>
             </section>
 
-            <section id="projects" class="glass-card section-spacer">
-                <h2 class="section-title"><i class="fas fa-project-diagram"></i> Projects</h2>
+            <section id="projects" class="glass-card reveal">
+                <h2 class="section-title">Selected Works</h2>
                 <div class="project-grid">
                     <div class="project-item" onclick="openProject('p1')">
-                        <span class="year">2025</span>
+                        <div class="project-header"><span>2025</span><i class="fas fa-chart-pie"></i></div>
                         <h3>Sentiment Clustering</h3>
-                        <p>Click for details</p>
+                        <p>Data Science / R-Script</p>
                     </div>
                     <div class="project-item" onclick="openProject('p2')">
-                        <span class="year">2026</span>
+                        <div class="project-header"><span>2026</span><i class="fas fa-calendar-check"></i></div>
                         <h3>Turf Booking</h3>
-                        <p>Click for details</p>
+                        <p>Full-Stack / PHP</p>
                     </div>
                     <div class="project-item" onclick="openProject('p3')">
-                        <span class="year">2023</span>
+                        <div class="project-header"><span>2023</span><i class="fas fa-check-to-slot"></i></div>
                         <h3>Voting System</h3>
-                        <p>Click for details</p>
+                        <p>Software / C#</p>
                     </div>
                     <div class="project-item" onclick="openProject('p4')">
-                        <span class="year">2024</span>
+                        <div class="project-header"><span>2024</span><i class="fas fa-vr-cardboard"></i></div>
                         <h3>London Bridge View</h3>
-                        <p>Click for details</p>
+                        <p>Graphics / OpenGL</p>
                     </div>
                 </div>
             </section>
 
-            <section id="contact" class="glass-card contact-section">
-                <h2 class="section-title"><i class="fas fa-paper-plane"></i> Quick Connect</h2>
-                <form action="process.php" method="POST" class="contact-form">
+            <section id="contact" class="glass-card reveal">
+                <h2 class="section-title">Get In Touch</h2>
+                <form action="https://formspree.io/f/mykdyzka" method="POST" class="contact-form">
                     <div class="form-row">
                         <input type="text" name="name" placeholder="Name" required>
                         <input type="email" name="email" placeholder="Email" required>
                     </div>
-                    <textarea name="message" rows="3" placeholder="How can I help you?" required></textarea>
-                    <button type="submit" class="gloss-btn">Send Message</button>
+                    <textarea name="message" rows="3" placeholder="How can we collaborate?" required></textarea>
+                    <button type="submit" class="modern-cv-btn" style="border:none; cursor:pointer; width:auto; padding: 12px 30px;">
+                        <span>Send Message</span> <i class="fas fa-paper-plane"></i>
+                    </button>
                 </form>
             </section>
         </main>
@@ -106,9 +126,9 @@
         <div class="modal-content glass-card">
             <span class="close-btn" onclick="closeModal()">&times;</span>
             <h2 id="modalTitle"></h2>
-            <p id="modalDescription" class="modal-p"></p>
-            <div class="modal-link-box">
-                <a id="modalLink" href="#" target="_blank" class="project-link-text">Visit Project/Repository <i class="fas fa-external-link-alt"></i></a>
+            <div class="modal-body">
+                <p id="modalDescription" style="color: #9ca3af; margin: 15px 0;"></p>
+                <a id="modalLink" href="#" target="_blank" class="modern-cv-btn" style="text-decoration:none;">Explore Repository</a>
             </div>
         </div>
     </div>
